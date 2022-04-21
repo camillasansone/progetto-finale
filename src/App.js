@@ -1,14 +1,22 @@
 import './App.css';
+
+//router
 import { Routes, Route, Outlet } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
+
+//components
+import AboutUs from './components/about-us/AboutUs';
+import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Navbar from './components/navbar/Navbar';
 import NotFound from './components/not-found/NotFound';
 import Posts from './components/posts/Posts';
 import PostDetail from './components/post-detail/PostDetail';
 import PostsCategory from './components/posts-category/PostsCategory';
-import Contact from './components/contact/Contact';
-import AboutUs from './components/about-us/AboutUs';
-import Header from './components/header/Header';
+
+//bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
