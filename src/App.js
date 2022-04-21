@@ -31,8 +31,8 @@ function App() {
           <Route path="posts-categories/:categoryId/posts" element={<PostsCategory />} />
         </Route>
 
-        <Route path="pages/about-us/:pageId" element={<AboutUs />} />
-        <Route path="pages/contacts/:pageId" element={<Contact />} />
+        <Route path="pages/about-us/" element={<AboutUs />} />
+        <Route path="pages/contacts/" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

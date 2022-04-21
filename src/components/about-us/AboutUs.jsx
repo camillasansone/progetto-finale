@@ -1,26 +1,27 @@
 import React from 'react';
+
+//funzione dove ho preparato la chiamata fetch
 import { getPageAboutUs } from '../../functions/pages';
 
 export default class AboutUs extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            pageAboutUs: []
-        };
     }
 
     componentDidMount() {
-        getPageAboutUs().then(pageAboutUs => this.setState({ pageAboutUs }));
+        getPageAboutUs().then(pgAboutUs => this.setState({ pgAboutUs }));
     }
 
     render() {
-        console.log(this.state.pageAboutUs)
+
+        // uso dangerouslySetInnerHTML per settare il contenuto e dire 
+        //a react che deve essere un contenuto dinamico. Non e' molto sicuro e erende il codice suscettibile 
+        //ad attacchi XXS
 
         return (
             <div >
-                <h1 className="mt-5 text-center">{this.state.pageAboutUs.title}</h1>
-                <p dangerouslySetInnerHTML={{ __html: this.state.pageAboutUs.content }}></p>
+                <h1 className="mt-5 text-center">{this.state.pgAboutUs.title}</h1>
+                <p dangerouslySetInnerHTML={{ __html: this.state.pgAboutUs.content }}></p>
             </div>
         );
     }
