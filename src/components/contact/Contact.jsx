@@ -11,11 +11,10 @@ export default class Contact extends React.Component {
     }
 
     componentDidMount() {
-        getPageContact().then(pageContact => this.setState({ pageContact }));
+        getPageContact().then(pageContact => this.setState({ pageContact }), console.log(this.pageContact));
     }
 
     render() {
-        console.log(this.state.pageContact)
 
         return (
             <div>

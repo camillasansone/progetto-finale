@@ -1,9 +1,11 @@
 import { Page } from "../models/Page"
 
 export const getPageContact = () => {
-    return fetch('http://wordpress.test/wp-json/wp/v2/pages/39')
+    console.log('ciao')
+    return fetch('http://wordpress.test/wp-json/wp/v2/pages')
         .then(resp => resp.json())
-        .then(page => pageConstructed(page));
+        // .then(page => pageConstructed(page));
+        .then (resp => console.log(resp));
 };
 
 export const getPageAboutUs = () => {
