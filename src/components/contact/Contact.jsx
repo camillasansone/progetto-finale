@@ -1,27 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { getPageContact } from '../../functions/pages';
-
-// export default function Contact() {
-//     const [hasLoaded, setHasLoaded] = useState(false);
-//     const [page, setPage] = useState([]);
-//     const {pageId} = useParams();
-
-//     if(!hasLoaded){
-//         getPages(pageId).then(page => {
-//             setPage(page);
-//             setHasLoaded(true);
-//         });
-//     }
-
-//     return (
-
-//         <div>
-//             {page.id}
-//         </div>
-//     );
-// }
-
 
 export default class Contact extends React.Component {
     constructor(props) {

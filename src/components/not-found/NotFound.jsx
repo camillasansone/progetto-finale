@@ -7,7 +7,7 @@ export default class NotFound extends React.Component {
 
     render() {
         return (
-            <div>Page Not Found</div>
+            <div>404 NN c'e'</div>
         )
     }
 }

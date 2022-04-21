@@ -16,9 +16,10 @@ export default class Post extends React.Component {
                     </p>
                     <p dangerouslySetInnerHTML={{ __html: this.props.post.content }}></p>
                     <p>{this.props.post.created_at}</p>
-                    <p>{this.props.post.author}</p>
+                    <p>{this.props.post.userdId}</p>
+                    <p>{this.props.post.categories}</p>
                 </div>
-                <Link className="btn btn-primary" to={`/posts/${this.props.post.id}`} >Details</Link>
+                <Link className="btn btn-primary" to={`/posts/${this.props.post.id}`} >More</Link>
             </div>
         );
     }
